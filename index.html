@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Exam - Björn Atlason</title>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <span class="link" id="startLink">Start</span>
+
+        <img id="logo" alt="logo" src="logo.png"/> 
+
+
+        <span class="link" id="searchLink">Search</span>
+
+    </nav>
+
+    <section class="open" id="startPage">
+       <!-- <p>Press the Genrate button to generate a random cocktail, and the See More button to learn about the details!</p>-->
+        
+        <!--Buttons for generating drinks randomly and the details page, so called "See more"-->
+        <button id="generateDrinkBtn" class="btn">Generate random drink</button>
+        <button id="seeMoreBtn" class="btn">Details</button>
+
+<!--Here I want a button that generates a random drink, and the picture 
+placeholder and an h2 with the drink name, i will need to give them all 
+ID's so I can call on them in the JS code and place the correct 
+info in each ID-->
+
+        <h2 id="drinkName"></h2> <!--Here is where the drink name generates-->
+        <img id="drinkImage" alt="Drink" style="max-width: 300px;">
+        
+    
+    </section>
+
+    <!--Here I can press the button to show the details, button called "See more:"-->
+
+    <section class ="open" id="detailsPage" style="display: none;">
+        <!--<h1>Details Page</h1> -->
+    
+        
+        <!--Here is all the information to be show when pressing the details button-->
+
+        <div id="detailsContainer">
+
+            <h1 id="detailsDrinkName"></h1>
+            <p id="detailsDrinkInfo">Details about the cocktail:</p>
+
+            <img id="detailsDrinkImage" src="" alt="Drink Image" style="max-width: 300px;">
+
+            <p id="detailsIngredients"></p>
+            <p id="detailsInstructions"></p>
+            <p id="detailsGlass"></p>
+            <p id="detailsTags"></p>
+            <p id="detailsCategory"></p>
+
+            
+
+        </div>
+        <button id="backToStartBtn" class="btn">Back to Start</button>
+
+    </section>
+    
+    <section class="open" id="searchPage" style="display: none;">
+        <div class="container">
+             <div class="text-block">
+                <form id="searchForm">
+                        <input id="searchInput" type="text" placeholder="Enter cocktail name" required>
+                        <button type="submit"><i class="material-icons">search</i></button>
+                </form>
+                       <!-- <img class="searchImg" alt="cocktailPicture" src="coc1.png" style="width: 100%;">-->
+            
+            
+             </div>
+        </div>
+        
+                <!-- In this div, the search results will be placed -->
+
+            <div id="searchResults">
+               
+              </div>
+        
+    </section>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

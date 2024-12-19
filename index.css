@@ -1,0 +1,238 @@
+#startPage, 
+#detailsPage, 
+#searchPage {
+    display: none;
+}
+
+#startPage.open, 
+#detailsPage.open, 
+#searchPage.open {
+    display: block;
+
+
+}
+
+body {
+    font-family: "Roboto", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 170, 115);
+    color: black;
+    text-align: center;
+    background-image: url("bar3.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.link {
+    cursor: pointer;
+
+}
+
+#logo {
+    padding: 5px;
+    margin: 10px;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(66, 31, 1, 0.8); 
+
+
+}
+
+#startPage {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    color: whitesmoke;
+    background-color: rgb(49, 10, 10);
+    box-shadow: 0px 0px 54px rgb(234, 152, 1); 
+    border-radius: 45px;
+
+}
+
+#searchPage {
+    color: whitesmoke;
+    background-image: ("coc1.png");
+    background-attachment: fixed;   
+
+}
+
+
+.open #drinkImage {
+border-radius: 200px;
+border-style: groove;
+border-width: 1rem;
+border-color: #dc690c;
+border-inline-color: rgb(255, 124, 1);
+margin: 20px;
+outline-color: #ff9900;
+
+}
+
+.open .searchResultsItem img {
+  justify-content: center; 
+  align-items: normal; 
+  padding: 10px; 
+  margin: 50px;
+  max-width: 300px; 
+  gap: 20px; 
+  border-radius: 200px;
+  border-style: groove;
+  border-width: 1rem;
+  border-color: #dc690c;
+  border-inline-color: rgb(255, 124, 1);
+  
+
+}
+
+.open .searchResultsItem img:hover {
+    transform: scale(1.05); 
+}
+
+.open .searchResultsItem h3 {
+    font-size: 2.5rem;       
+    text-align: center; 
+    color: rgb(255, 153, 19);
+    text-shadow: 0 5px 10px rgb(255, 169, 47);
+    -webkit-text-stroke: 1px black;
+
+}
+
+
+.open #drinkName {
+    color: #a95104;
+    font-size: 2rem;       
+    text-align: center; 
+    text-shadow: 0 0 10px rgb(255, 239, 62), 0 0 20px rgb(255, 230, 66), 0 0 10px rgb(255, 234, 40), 0 0 40px rgb(255, 196, 68);
+    -webkit-text-stroke: 1px black;
+
+}
+
+.open #detailsDrinkName {
+    color: #a95104;
+    font-size: 3rem;       
+    text-align: center; 
+    text-shadow: 0 0 10px rgb(255, 204, 62), 0 0 20px rgb(255, 211, 66), 0 0 10px rgb(255, 191, 40), 0 0 40px white;
+    -webkit-text-stroke: 1px black; 
+
+}
+
+.open #detailsDrinkInfo {
+    font-size: 1.5rem;       
+    text-align: center; 
+    color: rgb(255, 153, 19);
+    text-shadow: 0 5px 10px rgb(255, 206, 138);
+
+}
+
+
+  
+.open #detailsDrinkImage {
+    border-radius: 200px;
+    border-style: groove;
+    border-width: 1rem;
+    border-color: #dc690c;
+    border-inline-color: rgb(255, 124, 1);
+}
+
+
+#detailsPage {
+    color: whitesmoke;
+    font-weight: bolder;
+    
+}
+
+
+#detailsPage h2 {
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    background: linear-gradient(45deg, #f4ab23, #f4ab23); 
+    border: none; 
+    border-radius: 30px; 
+    color: black; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); 
+    transition: all 0.3s ease; 
+    margin: 10px;
+  
+}
+
+
+.btn:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px #feb47b; 
+
+}
+  
+  .btn:active {
+    transform: translateY(1px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: #dc690c; 
+    color: white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+.navbar .link {
+    margin: 0 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+}
+
+.navbar .link:hover {
+    color: #3e5267; 
+}
+
+.navbar .link.active {
+    font-weight: bold;
+    border-bottom: 2px solid white; 
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.open #detailsIngredients, .open #detailsInstructions, .open #detailsGlass, .open #detailsTags, .open #detailsCategory  {
+   
+
+    color:unset;
+    -webkit-text-stroke: 1px #000000; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto Mono', monospace; 
+
+}
+
+@media (max-width: 768px) {
+    .searchResultItem {
+      flex: 1 1 100%; 
+    }
+  }
+
+
+
+
+
+
+
+  
+
+  
