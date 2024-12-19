@@ -196,7 +196,7 @@ function displaySearchResults(drinks) {
     drinks.forEach((drink) => { //loop through "drink"
 
         const resultItem = document.createElement("div"); //creates a div when a drink is found
-        resultItem.classList.add("searchResultsItem"); //gives the result a new class inside the new div
+        resultItem.classList.add("searchResultsItem"); //dynamically gives the result a new class inside the new div
         resultItem.innerHTML = `
         <h3>${drink.strDrink}</h3>
         <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}" class="imageStyle" style="cursor: pointer;" data-drink-id="${drink.idDrink}">
